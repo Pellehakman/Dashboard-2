@@ -54,27 +54,42 @@
         padding: .2rem 1rem .2rem 1rem;
         width: 12rem;
         transition: .1s;
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        
         &:hover{
             background-color: $highlight-bg;
         }
 
-        
-       .nav-item-drop{
-        position: absolute;
-        height: 3rem;
-        width: 1rem;
-
-       }
-        
     }
     .active{
-        background-color: #1D4C78
+        background-color: #1D4C78;
+        .drop{
+            display: flex;
+            flex-direction: column;
+            font-family: $text-font;
+            
+        }
+       
 
     }
+    
     .inactive{
-        background-color: none
+        background-color: none;
+        .drop{
+            display: none;
+            padding: 0;
+            
+            
+        }
+        
+        
 
+    }
+    .drop-item:hover{
+        background-color: aliceblue;
+        
+        
     }
     .nav-account-container{
         display: flex;

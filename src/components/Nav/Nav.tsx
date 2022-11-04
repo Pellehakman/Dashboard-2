@@ -17,17 +17,24 @@ const Nav = () => {
 
             <ul className='nav-items-container'>
 
-            <NavLink className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item inactive')} to="/dashboard">
+            <NavLink className={({ isActive }) => (isActive ?  'nav-item active' : 'nav-item inactive drop')} to="/dashboard">
                 
                 <span>DASHBOARD</span>
+                
+               
                 
             
             
             </NavLink>
 
-            <NavLink className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item inactive')} to="/inbox">
-               INBOwX
-                
+            <NavLink className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item inactive drop')} to="/inbox">
+               <span>INBOX</span>
+               <div className='drop'>
+                <Link className='drop-item' to='#'>Inbox</Link>
+                <Link className='drop-item'  to='#'>Inbox</Link>
+                <Link className='drop-item'  to='#'>Inbox</Link>
+                <Link className='drop-item'  to='#'>Inbox</Link>
+                </div>
                 </NavLink>
 
             
