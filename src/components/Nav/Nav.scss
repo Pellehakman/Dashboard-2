@@ -1,0 +1,88 @@
+@import "../../styles/variables.scss";
+
+.Nav-container{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    background: linear-gradient(180deg, #2B6091 0%, #1a4166 100%);
+    width: 15rem;
+    height: 100vh;
+    flex-direction: column;
+
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+        .img-container{
+            margin: 1.5rem 0 1.5rem 0;
+
+        }
+
+        .logo-text{
+            font-family: $logo-font;
+            font-size: $logo-fs;
+            color: white;
+            font-weight: lighter;
+        }
+        .logo-underline{
+            background-color: white;
+            height: 2px;
+            width: 85%;
+            border-radius: 100rem;
+            margin: 1rem 0 1rem 0;
+        }
+
+        
+    }
+
+    .nav-items-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+        
+    }
+
+    .nav-item{
+        display: flex;
+        font-family: $menu-item;
+        font-size: $menu-item-fs;
+        font-weight: lighter;
+        color: $white-bg;
+        padding: .2rem 1rem .2rem 1rem;
+        width: 12rem;
+        transition: .1s;
+        position: relative;
+        &:hover{
+            background-color: $highlight-bg;
+        }
+
+        
+       .nav-item-drop{
+        position: absolute;
+        height: 3rem;
+        width: 1rem;
+
+       }
+        
+    }
+    .active{
+        background-color: #1D4C78
+
+    }
+    .inactive{
+        background-color: none
+
+    }
+    .nav-account-container{
+        display: flex;
+        background-color: $highlight-bg;
+        height: 4rem;
+        margin: 1.5rem;
+        
+        
+    }
+
+}
