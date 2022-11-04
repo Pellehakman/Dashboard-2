@@ -17,7 +17,6 @@
         
         .img-container{
             margin: 1.5rem 0 1.5rem 0;
-
         }
 
         .logo-text{
@@ -32,9 +31,7 @@
             width: 85%;
             border-radius: 100rem;
             margin: 1rem 0 1rem 0;
-        }
-
-        
+        }  
     }
 
     .nav-items-container{
@@ -42,7 +39,8 @@
         align-items: center;
         flex-direction: column;
         flex: 1;
-        
+        gap: .5rem;
+   
     }
 
     .nav-item{
@@ -53,51 +51,52 @@
         color: $white-bg;
         padding: .2rem 1rem .2rem 1rem;
         width: 12rem;
-        transition: .1s;
         display: flex;
         flex-direction: column;
-        
-        &:hover{
-            background-color: $highlight-bg;
-        }
+            &:hover{
+                transition: .2s all;
+                background-color: $highlight-bg;
+            }
 
     }
-    .active{
-        background-color: #1D4C78;
-        .drop{
-            display: flex;
-            flex-direction: column;
-            font-family: $text-font;
-            
-        }
-       
-
+    .drop{
+        
+        display: flex;
+        flex-direction: column;
+        font-family: $text-font;
+        background-color: rgba(255, 255, 255, 0.062);  
+        transition: 1s all;
+         
     }
     
-    .inactive{
-        background-color: none;
-        .drop{
-            display: none;
-            padding: 0;
-            
-            
-        }
-        
-        
 
-    }
-    .drop-item:hover{
-        background-color: aliceblue;
+    .active{
+        background-color: rgba(255, 255, 255, 0.062);  
         
-        
+            
+           
     }
+
+    
+    .inactive{
+            .drop{
+                display: none;    
+        }   
+    }
+
+    .drop-item{
+        font-family: $text-font;
+        padding: 1rem;
+        color: white;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.13);
+        }
+    }
+
     .nav-account-container{
         display: flex;
         background-color: $highlight-bg;
         height: 4rem;
-        margin: 1.5rem;
-        
-        
+        margin: 1.5rem;  
+        }
     }
-
-}
